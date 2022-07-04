@@ -1,3 +1,4 @@
+// Initializing the function that runs the entire game
 function game() {
 
   
@@ -9,17 +10,21 @@ function game() {
   let choice = choices[Math.floor(Math.random() * 3)];
   return choice;
 }
+  // prompting the player for an input
 const playerSelection = prompt('Please make a choice: ').toLowerCase();
+  // Assigning the ComputerPlay function to a variable
 const computerSelection = computerPlay();
 
 
 
-
+// printing the choices and results to the console
 console.log("User choice: ", playerSelection);
 console.log("Computer choice: ", computerSelection);
 console.log(playRound(playerSelection, computerSelection))
 
-
+// This function takes the two players input, process them through
+  // a series of conditions to decide whos the winner
+  // TODO Rewriting the conditions for better readability and in a more simple/beautiful way
 function playRound(playerSelection, computerSelection) {
 
   if (playerSelection === computerSelection) {
@@ -49,7 +54,7 @@ function playRound(playerSelection, computerSelection) {
       return 'You lost, rock wins';
     }
   }
-
+  // rejecting all other choices
   if (playerSelection !== 'scisor' || 'rock' || 'paper') {
     return 'Please chose one of three: rock, paper, scisor'
   }
@@ -66,10 +71,7 @@ function playRound(playerSelection, computerSelection) {
 
 
 }
-
+// looping through the game 5 times to play multiple rounds
 for (let i = 0; i <= 5; i++) {
   game();
 }
-
-
-//Prompt the user to input a choice
