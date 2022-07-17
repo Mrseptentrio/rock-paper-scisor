@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: salmon;
+    color: beige;
+}
+
+
+
+.heading {
+    text-align: center;
+    margin: 100px;
+    border: 10px solide white;
+}
+
+h1 {
+    padding: 50px;
+}
+
+.playArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 100px auto 100px;
+
+
+
+}
+
+.btn {
+    font-size: 7rem;
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    transition: 100ms;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+
+
+.displayed {
+    text-align: center;
+    margin: 50px;
+}
+
+.scoreBoard {
+    text-align: center;
+	border: solid 5px white;
+	border-radius: 10px;
+}

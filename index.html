@@ -2,10 +2,31 @@
 <html lang="en">
 <head>
         <meta charset="UTF-8">
-		<script src="main.js"></script>
-        <title></title>
+       <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+
+        <title>Rock Paper Scisors</title>
 </head>
 <body>
-        
+        <div class="heading">
+        <h1>Welcome to Rock, Paper, Scisor</h1>
+        <h3>Will you have what it takes to conquer over the Evil AI?</h3>
+        </div>
+
+
+        <div class="playArea">
+        <button id="rock" class="rock btn">✊</button>
+        <button id="paper" class="paper btn">✋</button>
+        <button id="scisor" class="scisor btn">✌️</button>
+</div>
+        <div class="displayed">
+                <h2>warrior Choice: <span class="warriorChoice"></span></h2>
+                <h2>Evil AI Choice: <span class="aiChoice"></span></h2>
+                <h2>Result: <span id="ending" class="ending"></span></h2>
+        </div>
+		<div class="scoreBoard">
+				<h2>Warrior Score: <span class="warriorScore"></span></h2>
+				<h2>AI Score: <span class="aiScore"></span></h2>
+		</div>
+        <script src="main.js"></script>
 </body>
 </html>
